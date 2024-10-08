@@ -11,7 +11,7 @@ export default function Navbar() {
     const dataMenu = [
         {
             title:'Home',
-            link :'/home'
+            link :'/'
         },
         {
             title:'About',
