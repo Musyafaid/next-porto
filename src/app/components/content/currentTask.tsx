@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function CurrentTask() {
 
@@ -26,7 +27,8 @@ export default function CurrentTask() {
        transition={{duration:1}}
         className='w-1/3  flex flex-wrap gap-2 gap-y-2'>
           {dataIcon.map((icon,index) => (
-            <img className='grayscale hover:grayscale-0 transition-all' key={index} src={ `/images/${icon.src}`} alt="" width={40} height={40} />
+            <Image
+            className='grayscale hover:grayscale-0 transition-all' key={index} src={ `/images/${icon.src}`} alt="" width={40} height={40} />
           ))}
       </motion.div>
     </div>

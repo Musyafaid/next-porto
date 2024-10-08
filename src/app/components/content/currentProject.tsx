@@ -2,6 +2,7 @@
 import React from 'react'
 import { useRef } from 'react'
 import { motion,useInView } from 'framer-motion'
+import Image from 'next/image'
 
 
 export default function CurrentProject() {
@@ -36,10 +37,11 @@ export default function CurrentProject() {
 
                 <div key={index} className='relative ' style={{width:'49%'}}>
                 <h1 className='z-10 font-extrabold top-4 text-center m-auto absolute text-2xl w-full'>{project.title}</h1>
-                <img 
-                className=' w-full px-28 bg-slate-700 bg h-60 grayscale rounded-md bg-opacity-30 p-5' 
+                <Image
+                className='  px-28 bg-slate-700 bg h-60 grayscale rounded-md bg-opacity-30 p-5' 
                 src={`/images/${project.img}`} alt=""
-               
+                width={450}
+                height={60}
                 />
 
                 {/* <img src="/images/github.svg" alt="" width="50"/> */}

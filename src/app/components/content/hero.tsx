@@ -2,6 +2,7 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 
 export default function Hero() {
@@ -30,11 +31,12 @@ export default function Hero() {
 
         <div className='w-1/2 relative '>
             
-            <img
+            <Image
                 src="/images/profile2.jpg"
                 className="grayscale hover:grayscale-0 transition-all  absolute right-0 rounded-md"
                 alt="Next.js logo"
-                width="215"
+                width={215}
+                height={300}
        
                 
              />
