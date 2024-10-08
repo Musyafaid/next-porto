@@ -13,7 +13,7 @@ export default function page() {
          animate={{ opacity: 1 }}
          transition={{ duration: 2 }}
         
-        className='w-2/3 flex pt-24 items-baseline h-screen  mx-auto'>
+        className='w-2/3 flex pt-24 items-baseline h-screen mx-auto max-md:w-full max-md:px-6'>
            <AboutText />
         </motion.div>
     </div>

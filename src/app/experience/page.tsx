@@ -8,7 +8,7 @@ export default function page() {
     <div>
         <Navbar />
 
-        <div className='w-2/3 flex flex-col h-screen   mx-auto'>
+        <div className='w-2/3 flex flex-col h-screen mx-auto max-md:w-full max-md:px-6'>
             <TimeLine />
             <CurrentProject />
         </div>

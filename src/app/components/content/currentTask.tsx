@@ -19,13 +19,13 @@ export default function CurrentTask() {
     {src: 'css.svg'}
   ]
   return (
-    <div className='mt-12 mb-10 '>
-      <h3 className='font-medium text-base text-stone-200 my-2'>Current Learning Task</h3>
+    <div className='mt-12  mb-10 '>
+      <h3 className='font-medium text-base max-md:text-sm text-stone-200 my-2'>Current Learning Task</h3>
       <motion.div
        initial={{clipPath: 'inset(0 100% 0 0)'}}
        animate={{clipPath: 'inset(0 0% 0 0)'}}
        transition={{duration:1}}
-        className='w-1/3  flex flex-wrap gap-2 gap-y-2'>
+        className='w-1/3 max-md:w-full max-md:justify-center flex flex-wrap gap-2 gap-y-2'>
           {dataIcon.map((icon,index) => (
             <Image
             className='grayscale hover:grayscale-0 transition-all' key={index} src={ `/images/${icon.src}`} alt="" width={40} height={40} />
