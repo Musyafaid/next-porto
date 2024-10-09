@@ -2,8 +2,8 @@
 import React from 'react'
 import Hero from './components/content/hero'
 import CurrentTask from './components/content/currentTask'
-import AboutText from './components/content/aboutText'
 import { motion } from 'framer-motion'
+import MaskCursor from './components/content/maskCursor'
 
 
 export default function page() {
@@ -15,12 +15,12 @@ export default function page() {
           transition={{ duration: 2 }}
        
             className='w-2/3 flex items-center h-screen mx-auto max-md:w-11/12 max-md:px-2' >
-            <div className='h-full w-full'>
-              <div className='w-full  h-1/3 pt-20 flex'>
+            <div className='h-full w-full pt-24 '>
+              <div className='w-full  h-1/3  flex'>
                 <Hero />
               </div>
               <CurrentTask />
-              <AboutText />
+              <MaskCursor />
             </div>
         </motion.div>
 

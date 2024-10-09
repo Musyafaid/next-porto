@@ -2,7 +2,9 @@
 import React from 'react'
 
 export default function AboutText() {
+
   return (
+    
     <div className='flex flex-col items-center'>
         <h1 className='mb-2 font-semibold text-center text-3xl border-b-2 border-gray-500 pb-2 w-44 max-md:text-2xl'>About Me :)</h1>
         <p className='text-justify max-md:text-base
