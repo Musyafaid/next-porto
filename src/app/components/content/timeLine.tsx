@@ -28,7 +28,7 @@ export default function TimeLine() {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 4 }}
-    className='mt-20'
+    className='mt-20 max-md:px-5'
     >
 
         <h1 className='my-5 text-3xl font-bold text-center'>My Experience</h1>

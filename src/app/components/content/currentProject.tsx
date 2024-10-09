@@ -24,7 +24,7 @@ export default function CurrentProject() {
         }
     ]
   return (
-    <div className='pb-10'>
+    <div className='pb-5'>
         <h1 className='mb-2 font-semibold text-left text-3xl  pb-2 w-44'>Project</h1>
         <motion.div
         ref={ref}
