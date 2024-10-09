@@ -1,8 +1,5 @@
-import { div } from 'framer-motion/client';
-import React from 'react'
-import { text } from 'stream/consumers';
 
-export default function 
+export default function Footer
 () {
     const footerData = [
         {

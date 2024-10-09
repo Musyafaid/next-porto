@@ -2,17 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./components/ui/footer";
 import Navbar from "./components/ui/navbar";
-import { Noto_Sans_Cherokee } from 'next/font/google'
 import { Lexend } from 'next/font/google'
 
 
-
-export const noto_sans_cherokee = Noto_Sans_Cherokee({
-  subsets : ['latin'],
-  display : 'swap'
-})
-
-export const lexend =  Lexend({
+const lexend =  Lexend({
   subsets : ['latin'],
   display : 'swap'
 })  
@@ -31,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-         className={`${lexend.className} `}
+         className={lexend.className}
       >
         <Navbar />
         {children}
