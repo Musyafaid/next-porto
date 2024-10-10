@@ -3,14 +3,20 @@ import  { useEffect, useState } from 'react';
 interface MousePosition {
     x: number | null;
     y: number | null;
+   
 }
+
+// interface ScrollPosition{
+//     scrollY : number | null;
+// }
 
 export default function useMousePosition() {
     const [mousePosition, setMousePosition] = useState<MousePosition>({ x: null, y: null });
-
+   
     const updateMousePosition = (e: MouseEvent) => {
         setMousePosition({ x: e.clientX, y: e.clientY });
     };
+
 
     useEffect(() => {
         window.addEventListener("mousemove", updateMousePosition);
