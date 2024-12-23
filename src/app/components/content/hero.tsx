@@ -33,7 +33,7 @@ export default function Hero() {
         <div className='w-1/2 relative '>
             
             <Image
-                src="/images/profile2.jpg"
+                src="https://w7.pngwing.com/pngs/910/606/png-transparent-head-the-dummy-avatar-man-tie-jacket-user.png"
                 className="grayscale hover:grayscale-0 max-md:w-32  transition-all  absolute right-0 rounded-md"
                 alt="Next.js logo"
                 width={215}
