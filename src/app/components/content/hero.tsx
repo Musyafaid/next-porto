@@ -20,7 +20,7 @@ export default function Hero() {
             sequence=
             {[
                 'Musyafa Achmad Saputra',1000,
-                'Junior Web Programing',1000
+                'Junior Web Developer',1000
 
             ]} 
             speed={50}
